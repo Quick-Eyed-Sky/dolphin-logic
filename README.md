@@ -6,6 +6,10 @@
 
 A small creative instrument for stories, images and music, in a warm, quiet interface. Draw five cards, keep the ones that speak to you, and change the others.
 
+![Dolphin Logic: a five-card draw and its working brief](docs/screenshot.png)
+
+*Story mode: five cards, a working brief, and a different way into the next piece.*
+
 ## Three ways in
 
 - **Story:** Figure · Tension · Place · Method · Perspective.
@@ -45,3 +49,7 @@ The sideways approach acknowledges **Brian Eno and Peter Schmidt's Oblique Strat
 All 675 card inputs and their assembled briefs were checked. Every card has a source; the bank contains 45 cards in each family for each mode. Browser checks cover the main interactions, source panels, saves, copying, export/import and a narrow phone layout. The delivered file embeds its runtime resources.
 
 Directed by **Jean-Pascal**, with development assistance from **Codex (OpenAI)**.
+
+## Support
+
+If Dolphin Logic gives you a useful unexpected turn, you can [**buy me a coffee**](https://buymeacoffee.com/oFJ5CiY7n).

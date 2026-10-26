@@ -16,6 +16,9 @@ dialog{color:var(--text);background:#1b1714;border:1px solid #66503c;border-radi
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
 .journal-idea{font:19px/1.7 var(--serif);color:var(--text);margin:12px 0 20px}
+
+footer .support-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:9px 12px;min-height:36px;border:1px solid #795333;border-radius:4px;color:var(--accent);font:10px var(--mono);white-space:nowrap}footer .support-link svg{width:17px;height:17px}footer .support-link:hover{background:#392719;color:var(--pale);border-color:var(--accent)}
+@media(max-width:600px){footer .support-link{font-size:11px;padding:10px 13px;min-height:40px}}
 </style>
 </head>
 <body>
@@ -27,6 +30,7 @@ dialog{color:var(--text);background:#1b1714;border:1px solid #66503c;border-radi
 <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M6 5h13v13"/></symbol>
 <symbol id="copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V3H3v13h5"/></symbol>
 <symbol id="save" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4Z"/></symbol>
+<symbol id="coffee" viewBox="0 0 24 24"><path d="M4 8h12v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4ZM16 9h2a3 3 0 0 1 0 6h-2M7 3v2M11 2v3M15 3v2M2 22h17"/></symbol>
 <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
 <symbol id="undo" viewBox="0 0 24 24"><path d="M7 5 3 9l4 4M3 9h11a6 6 0 0 1 0 12"/></symbol>
 <symbol id="figure" viewBox="0 0 64 64"><circle cx="32" cy="20" r="7"/><path d="M18 49c0-17 28-17 28 0M32 4v6M11 19l6 2M53 19l-6 2"/></symbol>
@@ -62,7 +66,7 @@ dialog{color:var(--text);background:#1b1714;border:1px solid #66503c;border-radi
 </section>
 <div class="below-note"><p>“The right dose of constraint and play.”<span>From the Journal · translated</span></p><div><span>45 cards in each deck.</span><button id="possibilitiesButton">184,528,125 possible draws per mode <span>↗</span></button></div></div>
 </main>
-<footer><span>Journal Maison-Page</span><p>A nod to Brian Eno &amp; Peter Schmidt.<button id="creditsButton">The thinking behind the cards <span>↗</span></button></p><button id="downloadAppButton" class="offline">Download the standalone page <span>↓</span></button></footer>
+<footer><span>Journal Maison-Page</span><p>A nod to Brian Eno &amp; Peter Schmidt.<button id="creditsButton">The thinking behind the cards <span>↗</span></button></p><button id="downloadAppButton" class="offline">Download the standalone page <span>↓</span></button><a class="support-link" href="https://buymeacoffee.com/oFJ5CiY7n" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#coffee"/></svg><span>Buy me a coffee</span></a></footer>
 </div>
 <dialog id="libraryDialog" class="wide-dialog" aria-labelledby="libraryTitle"><div class="dialog-head"><div><p class="eyebrow">THE COLLECTION</p><h2 id="libraryTitle">Browse the deck.</h2></div><button class="icon-button close-dialog" aria-label="Close library"><svg><use href="#close"/></svg></button></div><div class="library-controls"><label class="search-label"><span class="sr-only">Search cards</span><input id="cardSearch" type="search" placeholder="A figure, a place, a way of doing…" autocomplete="off"></label><label><span class="sr-only">Medium</span><select id="libraryMode"><option value="story">Story</option><option value="image">Image</option><option value="music">Music</option></select></label><label><span class="sr-only">Deck</span><select id="libraryFamily"></select></label></div><div class="library-info"><span id="libraryCount"></span><button id="deckExportButton">Download all cards ↓</button></div><div id="libraryResults" class="library-results"></div><div class="pagination"><button id="previousPage" class="secondary">← Previous</button><span id="pageIndicator"></span><button id="nextPage" class="secondary">Next →</button></div></dialog>
 <dialog id="sourceDialog" class="source-dialog" aria-labelledby="sourceTitle"><div class="dialog-head"><div><p id="sourceRole" class="eyebrow">FROM THE JOURNAL</p><h2 id="sourceTitle"></h2></div><button class="icon-button close-dialog" aria-label="Close card source"><svg><use href="#close"/></svg></button></div><p id="sourceAdaptation" class="source-adaptation"></p><div id="sourcePassages"></div></dialog>
